@@ -218,6 +218,14 @@ local function set_groups()
     NotifyDEBUGTitle = { fg = colors.grey2 },
     NotifyTRACETitle = { fg = colors.yellow },
 
+    -- Packer
+    packerFail = { fg = colors.red }, -- Icon when install/update fails
+    packerSuccess = { fg = colors.green }, -- Icon when install/update is a success
+    packerWorking = { fg = colors.yellow }, -- Icon when syncing
+    packerOutput = { fg = colors.blue }, -- Text beneath plugin title (e.g. Commits)
+    packerStatusFail = { fg = colors.red },
+    packerStatusSuccess = { fg = colors.green }, -- Plugin name when install/update is a success
+
     -- Dap
     NvimDapVirtualText = { fg = colors.purple },
 
