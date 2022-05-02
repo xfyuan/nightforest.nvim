@@ -109,6 +109,11 @@ local function set_groups()
     diffLine = { fg = colors.blue },
     diffIndexLine   = { fg = colors.purple },
 
+    -- NeoVim
+    healthError = { fg = colors.red },
+    healthSuccess = { fg = colors.green },
+    healthWarning = { fg = colors.yellow },
+
     -- LSP
     DiagnosticError = { bg = colors.bg_red },
     DiagnosticWarn = { bg = colors.bg_yellow },
