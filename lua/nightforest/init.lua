@@ -178,7 +178,7 @@ local function set_groups()
     CursorWord1 = { bg = colors.bg2 },
 
     -- NvimTree
-    NvimTreeGitDirty = { fg = colors.orange },
+    NvimTreeGitDirty = { fg = colors.blue },
     NvimTreeGitSblueed = { fg = colors.blue },
     NvimTreeGitMerge = { fg = colors.red },
     NvimTreeGitNew = { fg = colors.green },
