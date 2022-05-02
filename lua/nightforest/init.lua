@@ -41,7 +41,7 @@ local function set_groups()
     Statement = { fg = colors.red }, -- (preferred) any statement
     String = { fg = colors.green }, -- a string constant: "this is a string"
     Structure = { fg = colors.fg }, -- struct, union, enum, etc.
-    Todo = { fg = colors.red }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Todo = { fg = colors.aqua }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
     Type = { fg = colors.yellow }, -- (preferred) int, long, char, etc.
     Underlined = { fg = colors.blue, underline = true }, -- (preferred) text that stands out, HTML links
     -- Markdown
@@ -93,11 +93,21 @@ local function set_groups()
     qfLineNr = { fg = colors.red },
 
     DiffAdd = { bg = colors.bg_green }, -- diff mode: Added line |diff.txt|
-    DiffAdded = { fg = colors.green },
-    DiffDelete = { bg = colors.bg_red }, -- diff mode: Deleted line |diff.txt|
-    DiffRemoved = { fg = colors.red },
-    DiffText = { fg = colors.bg, bg = colors.blue }, -- diff mode: Changed text within a changed line |diff.txt|
     DiffChange = { bg = colors.bg_blue }, -- diff mode: Changed line |diff.txt|
+    DiffDelete = { bg = colors.bg_red }, -- diff mode: Deleted line |diff.txt|
+    DiffText = { fg = colors.bg, bg = colors.blue }, -- diff mode: Changed text within a changed line |diff.txt|
+    DiffAdded = { fg = colors.green },
+    DiffRemoved = { fg = colors.red },
+
+    -- Git
+    diffAdded = { fg = colors.green },
+    diffChanged = { fg = colors.blue },
+    diffRemoved = { fg = colors.red },
+    diffFile = { fg = colors.aqua },
+    diffNewFile = { fg = colors.orange },
+    diffOldFile = { fg = colors.yellow },
+    diffLine = { fg = colors.blue },
+    diffIndexLine   = { fg = colors.purple },
 
     -- LSP
     DiagnosticError = { bg = colors.bg_red },
