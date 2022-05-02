@@ -25,9 +25,7 @@ end
 
 local function set_groups()
   local groups = {
-    -- =====================================================
-    -- Syntax
-    -- =====================================================
+    -- ===================== Syntax ==================== {{{
     Comment = { fg = colors.grey1 }, -- any comment
     Constant = { fg = colors.aqua }, -- (preferred) any constant
     CursorLineConceal = { fg = colors.bg4, bg = colors.bg1 },
@@ -48,11 +46,10 @@ local function set_groups()
     Underlined = { fg = colors.blue, underline = true }, -- (preferred) text that stands out, HTML links
     -- Markdown
     markdownCode = { fg = colors.green },
+    -- }}}
 
 
-    -- =====================================================
-    -- Editor
-    -- =====================================================
+    -- ===================== Editor ==================== {{{
     Normal = { fg = colors.fg, bg = colors.bg }, -- normal text
     NormalFloat = { bg = colors.bg }, -- Normal text in floating windows.
     FloatBorder = { fg = colors.grey1 },
@@ -118,10 +115,11 @@ local function set_groups()
     TSField = { fg = colors.blue },
     TSParameter = { fg = colors.fg },
     TSUnderline = { sp = colors.blue, underline = true },
+    -- }}}
 
-    -- =====================================================
-    -- Plugins
-    -- =====================================================
+    -- ===================== Plugins ==================== {{{
+    -- Aerial
+    AerialLine = { bg = colors.bg_green },
 
     -- Gitsigns
     GitSignsAdd = { fg = colors.green },
@@ -238,6 +236,7 @@ local function set_groups()
     VM_Cursor = { bg = colors.bg2, sp = colors.fg, underline = true },
     VM_Insert = { sp = colors.fg, underline = true },
     VM_Mono = { fg = colors.bg, bg = colors.grey1 },
+    -- }}}
   }
 
   groups = vim.tbl_extend('force', groups, type(config.overrides) == 'function' and config.overrides() or config.overrides)
