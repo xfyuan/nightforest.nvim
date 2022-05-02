@@ -197,6 +197,12 @@ local function set_groups()
     HopNextKey2 = { fg = colors.aqua },
     HopUnmatched = { fg = colors.grey1 },
 
+    -- IndentBlankline
+    IndentBlanklineContextChar = { fg = colors.grey1 },
+    IndentBlanklineChar = { fg = colors.bg5 },
+    IndentBlanklineSpaceChar = { fg = colors.bg5 },
+    IndentBlanklineSpaceCharBlankline = { fg = colors.bg5 },
+
     -- LSP Signature
     LspSignatureActiveParameter = { italic = true },
 
