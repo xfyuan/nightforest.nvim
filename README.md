@@ -16,6 +16,20 @@ Dayforest
 
 ![dayforest](screenshots/dayforest.jpg)
 
+## Support for popular plugins:
+
+  - [aerial.nvim](https://github.com/stevearc/aerial.nvim)
+  - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+  - [Hop.nvim](https://github.com/phaazon/hop.nvim)
+  - [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim/tree/lua)
+  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+  - [nvim-dap](https://github.com/mfussenegger/nvim-dap)
+  - [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
+  - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
+  - [packer.nvim](https://github.com/wbthomason/packer.nvim)
+  - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+  - [Which Key](https://github.com/folke/which-key.nvim)
+
 ## Commands
 
 To apply the colorscheme, you can call `require('nightforest').colorscheme()` from lua or use `:colorscheme nightforest` command. By default it respects your `'background'` (see `:h background`) setting to choose between `dark` and `light` variants. But you can use the `:colorscheme nightforest`, `:colorscheme dayforest`, or `:colorscheme dawnforest` commands to apply a variant directly.
