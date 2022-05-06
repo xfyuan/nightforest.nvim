@@ -140,7 +140,7 @@ local function set_groups()
     TSField = { fg = colors.blue },
     TSFloat = { fg = colors.purple }, -- For floats
     TSFuncMacro = { fg = colors.aqua }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
-    TSInclude = { fg = colors.blue }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
+    TSInclude = { fg = colors.red }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
     TSLabel = { fg = colors.purple }, -- For labels: `label:` in C and `:label:` in Lua.
     TSLiteral = { fg = colors.fg }, -- Literal text.
     TSNote = { fg = colors.bg, bg = colors.blue, bold = true },
