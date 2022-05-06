@@ -126,10 +126,46 @@ local function set_groups()
     DiagnosticUnderlineHint = { sp = colors.purple, undercurl = true },
 
     -- TreeSitter
-    TSProperty = { fg = colors.blue },
+    TSAnnotation = { fg = colors.orange }, -- For C++/Dart attributes, annotations thatcan be attached to the code to denote some kind of meta information.
+    TSAttribute = { fg = colors.purple }, -- (unstable) TODO: docs
+    TSBoolean = { fg = colors.blue, bold = true }, -- For booleans.
+    TSConstBuiltin = { fg = colors.aqua, bold = true }, -- For constant that are built in the language: `nil` in Lua.
+    TSConstMacro = { fg = colors.aqua, bold = true }, -- For constants that are defined by macros: `NULL` in C.
+    TSConstant = { fg = colors.yellow }, -- For constants
+    TSConstructor = { fg = colors.blue }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    TSDanger = { fg = colors.bg, bg = colors.red, bold = true },
+    TSEmphasis = { fg = colors.none, bg = colors.none, italic = true }, -- For text to be represented with emphasis.
+    TSError = { fg = colors.red }, -- For syntax/parser errors.
+    TSException = { fg = colors.purple }, -- For exception related keywords.
     TSField = { fg = colors.blue },
-    TSParameter = { fg = colors.fg },
-    TSUnderline = { sp = colors.blue, underline = true },
+    TSFloat = { fg = colors.purple }, -- For floats
+    TSFuncMacro = { fg = colors.aqua }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
+    TSInclude = { fg = colors.blue }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
+    TSLabel = { fg = colors.purple }, -- For labels: `label:` in C and `:label:` in Lua.
+    TSLiteral = { fg = colors.fg }, -- Literal text.
+    TSNote = { fg = colors.bg, bg = colors.blue, bold = true },
+    TSNumber = { fg = colors.purple }, -- For all number
+    TSOperator = { fg = colors.blue }, -- For any operator: `+`, but also `->` and `*` in C.
+    TSParameter = { fg = colors.fg }, -- For parameters of a function.
+    TSParameterReference = { fg = colors.green }, -- For references to parameters of a function.
+    TSProperty = { fg = colors.blue },
+    TSPunctBracket = { fg = colors.aqua }, -- For brackets and parens.
+    TSPunctDelimiter = { fg = colors.aqua }, -- For delimiters ie: `.`
+    TSPunctSpecial = { fg = colors.aqua }, -- For special punctutation that does not fall in the catagories before.
+    TSStrong = { fg = colors.none, bg = colors.none, bold = true },
+    TSSymbol = { fg = colors.purple }, -- For identifiers referring to symbols or atoms.
+    TSTag = { fg = colors.fg }, -- Tags like html tag names.
+    TSTagDelimiter = { fg = colors.purple }, -- Tag delimiter like `<` `>` `/`
+    TSText = { fg = colors.fg }, -- For strings considenord11_gui text in a markup language.
+    TSTextReference = { fg = colors.purple }, -- For footnotes, text references, citations.E
+    TSTitle = { fg = colors.green, bg = colors.none, bold = true }, -- Text that is part of a title.
+    TSType = { fg = colors.yellow }, -- For types.
+    TSTypeBuiltin = { fg = colors.yellow }, -- For builtin types (you guessed it, right ?).
+    TSURI = { fg = colors.green }, -- Any URI like a link or email.
+    TSUnderline = { fg = colors.none, bg = colors.none, underline = true }, -- For text to be represented with an underline.
+    TSVariable = { fg = colors.fg }, -- Any variable name that does not have another highlight.
+    TSVariableBuiltin = { fg = colors.blue, bg = colors.none, italic = true }, -- Variable names that are defined by the languages, like `this` or `self`.
+    TSWarning = { fg = colors.bg, bg = colors.yellow, bold = true },
     -- }}}
 
     -- ===================== Plugins ==================== {{{
