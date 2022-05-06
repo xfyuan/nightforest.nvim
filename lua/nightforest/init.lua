@@ -222,16 +222,21 @@ local function set_groups()
     LspSignatureActiveParameter = { italic = true },
 
     -- Notify
-    NotifyERROR = { fg = colors.red },
-    NotifyWARN = { fg = colors.green },
-    NotifyINFO = { fg = colors.green },
-    NotifyDEBUG = { fg = colors.grey1 },
-    NotifyTRACE = { fg = colors.blue },
-    NotifyERRORTitle = { fg = colors.red },
-    NotifyWARNTitle = { fg = colors.yellow },
-    NotifyINFOTitle = { fg = colors.green },
-    NotifyDEBUGTitle = { fg = colors.grey2 },
-    NotifyTRACETitle = { fg = colors.yellow },
+    NotifyERRORBorder = { fg = colors.red },
+    NotifyERRORIcon = { fg = colors.red },
+    NotifyERRORTitle = { fg = colors.red, italic = true },
+    NotifyWARNBorder = { fg = colors.yellow },
+    NotifyWARNIcon = { fg = colors.yellow },
+    NotifyWARNTitle = { fg = colors.yellow, italic = true },
+    NotifyINFOBorder = { fg = colors.green },
+    NotifyINFOIcon = { fg = colors.green },
+    NotifyINFOTitle = { fg = colors.green, italic = true },
+    NotifyDEBUGBorder = { fg = colors.purple },
+    NotifyDEBUGIcon = { fg = colors.purple },
+    NotifyDEBUGTitle = { fg = colors.purple, italic = true },
+    NotifyTRACEBorder = { fg = colors.orange },
+    NotifyTRACEIcon = { fg = colors.orange },
+    NotifyTRACETitle = { fg = colors.orange, italic = true },
 
     -- Packer
     packerFail = { fg = colors.red }, -- Icon when install/update fails
