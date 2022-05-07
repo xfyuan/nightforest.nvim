@@ -262,9 +262,9 @@ local function set_groups()
     WhichKeyDesc = { fg = colors.aqua },
 
     -- Hop
-    HopNextKey = { fg = colors.orange, bold = true, underline = true },
-    HopNextKey1 = { fg = colors.green, bold = true, underline = true },
-    HopNextKey2 = { fg = colors.aqua },
+    HopNextKey = { fg = colors.orange, bold = true },
+    HopNextKey1 = { fg = colors.green, bold = true },
+    HopNextKey2 = { fg = colors.green },
     HopUnmatched = { fg = colors.grey1 },
 
     -- IndentBlankline
