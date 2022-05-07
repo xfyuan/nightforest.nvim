@@ -119,7 +119,7 @@ local function set_groups()
     DiagnosticError = { fg = utils.darken(colors.red, 0.82) },
     DiagnosticWarn = { fg = utils.darken(colors.yellow, 0.82) },
     DiagnosticInfo = { fg = utils.darken(colors.green, 0.82) },
-    DiagnosticHint = { fg = utils.darken(colors.blue, 0.76) },
+    DiagnosticHint = { fg = utils.darken(colors.blue, 0.64) },
 
     DiagnosticUnderlineError = { sp = colors.red, undercurl = true },
     DiagnosticUnderlineWarn = { sp = colors.red, undercurl = true },
