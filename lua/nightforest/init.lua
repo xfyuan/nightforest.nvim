@@ -259,7 +259,7 @@ local function set_groups()
     WhichKey = { fg = colors.red },
     WhichKeySeperator = { fg = colors.green },
     WhichKeyGroup = { fg = colors.yellow },
-    WhichKeyDesc = { fg = colors.aqua },
+    WhichKeyDesc = { fg = colors.blue },
 
     -- Hop
     HopNextKey = { fg = colors.orange, bold = true },
