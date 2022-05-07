@@ -1,5 +1,6 @@
 local colors = require('nightforest.colors')
 local config = require('nightforest.config')
+local utils = require("nightforest.utils")
 local nightforest = {}
 
 local function set_terminal_colors()
@@ -115,10 +116,10 @@ local function set_groups()
     healthWarning = { fg = colors.yellow },
 
     -- LSP
-    DiagnosticError = { bg = colors.bg_red },
-    DiagnosticWarn = { bg = colors.bg_yellow },
-    DiagnosticInfo = { bg = colors.bg_blue },
-    DiagnosticHint = { bg = colors.bg_green },
+    DiagnosticError = { fg = utils.darken(colors.red, 0.82) },
+    DiagnosticWarn = { fg = utils.darken(colors.yellow, 0.82) },
+    DiagnosticInfo = { fg = utils.darken(colors.green, 0.82) },
+    DiagnosticHint = { fg = utils.darken(colors.blue, 0.76) },
 
     DiagnosticUnderlineError = { sp = colors.red, undercurl = true },
     DiagnosticUnderlineWarn = { sp = colors.red, undercurl = true },
