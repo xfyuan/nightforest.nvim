@@ -126,45 +126,63 @@ local function set_groups()
     DiagnosticUnderlineHint = { sp = colors.purple, undercurl = true },
 
     -- TreeSitter
-    TSAnnotation = { fg = colors.orange }, -- For C++/Dart attributes, annotations thatcan be attached to the code to denote some kind of meta information.
+    -- TSError = { fg = colors.red, bold = true }, -- For syntax/parser errors.
+    -- TSLiteral = { fg = colors.fg }, -- Literal text.
+    -- TSTextReference = { fg = colors.purple }, -- For footnotes, text references, citations.E
+    -- TSTitle = { fg = colors.orange, bg = colors.none, bold = true }, -- Text that is part of a title.
+    TSAnnotation = { fg = colors.purple }, -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
     TSAttribute = { fg = colors.purple }, -- (unstable) TODO: docs
-    TSBoolean = { fg = colors.blue, bold = true }, -- For booleans.
-    TSConstBuiltin = { fg = colors.aqua, bold = true }, -- For constant that are built in the language: `nil` in Lua.
-    TSConstMacro = { fg = colors.aqua, bold = true }, -- For constants that are defined by macros: `NULL` in C.
-    TSConstant = { fg = colors.yellow }, -- For constants
-    TSConstructor = { fg = colors.blue }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    TSBoolean = { fg = colors.purple, bold = true }, -- For booleans.
+    TSCharacter = { fg = colors.aqua },
+    TSComment = { fg = colors.grey1 },
+    TSConditional = { fg = colors.red },
+    TSConstBuiltin = { fg = colors.blue, italic = true }, -- For constant that are built in the language: `nil` in Lua.
+    TSConstMacro = { fg = colors.blue, italic = true }, -- For constants that are defined by macros: `NULL` in C.
+    TSConstant = { fg = colors.fg }, -- For constants
+    TSConstructor = { fg = colors.green }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
     TSDanger = { fg = colors.bg, bg = colors.red, bold = true },
     TSEmphasis = { fg = colors.none, bg = colors.none, italic = true }, -- For text to be represented with emphasis.
-    TSError = { fg = colors.red }, -- For syntax/parser errors.
-    TSException = { fg = colors.purple }, -- For exception related keywords.
-    TSField = { fg = colors.blue },
+    TSException = { fg = colors.red }, -- For exception related keywords.
+    TSField = { fg = colors.green },
     TSFloat = { fg = colors.purple }, -- For floats
-    TSFuncMacro = { fg = colors.aqua }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
+    TSFuncBuiltin = { fg = colors.green },
+    TSFuncMacro = { fg = colors.green }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
+    TSFunction = { fg = colors.green },
     TSInclude = { fg = colors.red }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
-    TSLabel = { fg = colors.purple }, -- For labels: `label:` in C and `:label:` in Lua.
-    TSLiteral = { fg = colors.fg }, -- Literal text.
+    TSKeyword = { fg = colors.red },
+    TSKeywordFunction = { fg = colors.red },
+    TSKeywordOperator = { fg = colors.orange },
+    TSLabel = { fg = colors.orange }, -- For labels: `label:` in C and `:label:` in Lua.
+    TSMath = { fg = colors.blue },
+    TSMethod = { fg = colors.green },
+    TSNamespace = { fg = colors.yellow, italic = true },
+    TSNone = { fg = colors.none },
     TSNote = { fg = colors.bg, bg = colors.blue, bold = true },
     TSNumber = { fg = colors.purple }, -- For all number
-    TSOperator = { fg = colors.blue }, -- For any operator: `+`, but also `->` and `*` in C.
+    TSOperator = { fg = colors.orange }, -- For any operator: `+`, but also `->` and `*` in C.
     TSParameter = { fg = colors.fg }, -- For parameters of a function.
-    TSParameterReference = { fg = colors.green }, -- For references to parameters of a function.
-    TSProperty = { fg = colors.blue },
+    TSParameterReference = { fg = colors.fg }, -- For references to parameters of a function.
+    TSProperty = { fg = colors.fg },
     TSPunctBracket = { fg = colors.aqua }, -- For brackets and parens.
-    TSPunctDelimiter = { fg = colors.aqua }, -- For delimiters ie: `.`
-    TSPunctSpecial = { fg = colors.aqua }, -- For special punctutation that does not fall in the catagories before.
+    TSPunctDelimiter = { fg = colors.grey1 }, -- For delimiters ie: `.`
+    TSPunctSpecial = { fg = colors.blue }, -- For special punctutation that does not fall in the catagories before.
+    TSRepeat = { fg = colors.red },
+    TSStrike = { fg = colors.grey1 },
+    TSString = { fg = colors.aqua },
+    TSStringEscape = { fg = colors.green },
+    TSStringRegex = { fg = colors.green },
     TSStrong = { fg = colors.none, bg = colors.none, bold = true },
-    TSSymbol = { fg = colors.purple }, -- For identifiers referring to symbols or atoms.
-    TSTag = { fg = colors.fg }, -- Tags like html tag names.
-    TSTagDelimiter = { fg = colors.purple }, -- Tag delimiter like `<` `>` `/`
-    TSText = { fg = colors.fg }, -- For strings considenord11_gui text in a markup language.
-    TSTextReference = { fg = colors.purple }, -- For footnotes, text references, citations.E
-    TSTitle = { fg = colors.green, bg = colors.none, bold = true }, -- Text that is part of a title.
+    TSStructure = { fg = colors.blue, italic = true },
+    TSSymbol = { fg = colors.fg }, -- For identifiers referring to symbols or atoms.
+    TSTag = { fg = colors.orange }, -- Tags like html tag names.
+    TSTagDelimiter = { fg = colors.green }, -- Tag delimiter like `<` `>` `/`
+    TSText = { fg = colors.green }, -- For strings considenord11_gui text in a markup language.
     TSType = { fg = colors.yellow }, -- For types.
-    TSTypeBuiltin = { fg = colors.yellow }, -- For builtin types (you guessed it, right ?).
-    TSURI = { fg = colors.green }, -- Any URI like a link or email.
+    TSTypeBuiltin = { fg = colors.yellow, italic = true }, -- For builtin types (you guessed it, right ?).
+    TSURI = { fg = colors.blue, underline = true }, -- Any URI like a link or email.
     TSUnderline = { fg = colors.none, bg = colors.none, underline = true }, -- For text to be represented with an underline.
     TSVariable = { fg = colors.fg }, -- Any variable name that does not have another highlight.
-    TSVariableBuiltin = { fg = colors.blue, bg = colors.none, italic = true }, -- Variable names that are defined by the languages, like `this` or `self`.
+    TSVariableBuiltin = { fg = colors.blue, italic = true }, -- Variable names that are defined by the languages, like `this` or `self`.
     TSWarning = { fg = colors.bg, bg = colors.yellow, bold = true },
     -- }}}
 
