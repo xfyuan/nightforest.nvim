@@ -31,18 +31,18 @@ local function set_groups()
     Constant = { fg = colors.aqua }, -- (preferred) any constant
     CursorLineConceal = { fg = colors.bg4, bg = colors.bg1 },
     Delimiter = { fg = colors.fg }, -- character that needs attention
-    Error = { fg = colors.white, bg = colors.red }, -- (preferred) any erroneous construct
-    Exception = { fg = colors.red }, -- try, catch, throw
+    Error = { fg = colors.red }, -- (preferred) any erroneous construct
+    Exception = { fg = colors.red, italic = true }, -- try, catch, throw
     Function = { fg = colors.green }, -- function name (also: methods for classes)
-    Identifier = { fg = colors.yellow }, -- (preferred) any variable name
-    Ignore = { fg = colors.fg },
+    Identifier = { fg = colors.blue }, -- (preferred) any variable name
+    Ignore = { fg = colors.grey1 },
     Operator = { fg = colors.orange }, -- "sizeof", "+", "*", etc.
-    PreProc = { fg = colors.red }, -- (preferred) generic Preprocessor
-    Special = { fg = colors.fg }, -- (preferred) any special symbol
+    PreProc = { fg = colors.purple }, -- (preferred) generic Preprocessor
+    Special = { fg = colors.yellow }, -- (preferred) any special symbol
     Statement = { fg = colors.red }, -- (preferred) any statement
     String = { fg = colors.green }, -- a string constant: "this is a string"
-    Structure = { fg = colors.fg }, -- struct, union, enum, etc.
-    Todo = { fg = colors.aqua }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Structure = { fg = colors.orange }, -- struct, union, enum, etc.
+    Todo = { fg = colors.purple }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
     Type = { fg = colors.yellow }, -- (preferred) int, long, char, etc.
     Underlined = { fg = colors.blue, underline = true }, -- (preferred) text that stands out, HTML links
     -- Markdown
