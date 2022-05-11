@@ -21,7 +21,10 @@ function colors.generate(midnight)
     colors.statusline3 = '#e67e80'
 
     if midnight then
-      colors.bg          = '#262d33'
+      -- colors.bg          = '#262d33'
+      colors.bg          = '#2a3841'
+      -- colors.bg          = '#233c3c'
+      colors.bg          = '#233c3c'
       colors.bg1         = '#323c41'
       colors.bg2         = '#3a454a'
       colors.bg3         = '#445055'
