@@ -327,6 +327,9 @@ local function set_groups()
     VM_Mono = { fg = colors.bg, bg = colors.grey1 },
     -- }}}
   }
+  if vim.o.background == 'light' then
+    groups.CursorLine = { bg = colors.bg3 }
+  end
 
   groups = vim.tbl_extend('force', groups, type(config.overrides) == 'function' and config.overrides() or config.overrides)
 
