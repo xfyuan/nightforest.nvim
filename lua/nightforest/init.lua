@@ -116,9 +116,9 @@ local function set_groups()
     healthWarning = { fg = colors.yellow },
 
     -- LSP
-    DiagnosticError = { fg = utils.darken(colors.red, 0.82) },
-    DiagnosticWarn = { fg = utils.darken(colors.yellow, 0.82) },
-    DiagnosticInfo = { fg = utils.darken(colors.green, 0.82) },
+    DiagnosticError = { fg = utils.darken(colors.red, 0.72) },
+    DiagnosticWarn = { fg = utils.darken(colors.yellow, 0.66) },
+    DiagnosticInfo = { fg = utils.darken(colors.green, 0.72) },
     DiagnosticHint = { fg = utils.darken(colors.blue, 0.64) },
 
     DiagnosticUnderlineError = { sp = colors.red, undercurl = true },
