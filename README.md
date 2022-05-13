@@ -1,6 +1,6 @@
 # Neovim Nightforest
 
-A colorscheme for Neovim 0.7+ reimplemented in lua from [everforest](https://github.com/sainnhe/everforest).
+A colorscheme for Neovim 0.5+ reimplemented in lua from [everforest](https://github.com/sainnhe/everforest).
 
 ## Screenshots
 
