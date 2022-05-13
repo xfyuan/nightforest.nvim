@@ -25,6 +25,7 @@ Dayforest
   - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
   - [nvim-dap](https://github.com/mfussenegger/nvim-dap)
   - [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
+  - [nvim-notify](https://github.com/rcarriga/nvim-notify)
   - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
   - [packer.nvim](https://github.com/wbthomason/packer.nvim)
   - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
