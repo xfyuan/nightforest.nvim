@@ -6,15 +6,15 @@ A colorscheme for Neovim 0.5+ reimplemented in lua from [everforest](https://git
 
 Nightforest
 
-![nightforest](screenshots/nightforest.jpg)
+![nightforest](https://cdn.jsdelivr.net/gh/xfyuan/ossimgs@master/uPic/nightforest.png)
 
 Dawnforest
 
-![dawnforest](screenshots/dawnforest.jpg)
+![dawnforest](https://cdn.jsdelivr.net/gh/xfyuan/ossimgs@master/uPic/dawnforest.png)
 
 Dayforest
 
-![dayforest](screenshots/dayforest.jpg)
+![dayforest](https://cdn.jsdelivr.net/gh/xfyuan/ossimgs@master/uPic/dayforest.png)
 
 ## Support for popular plugins:
 
